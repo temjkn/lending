@@ -1,0 +1,251 @@
+@yellow:#feb422;
+@yellow_dark:darken(@yellow,12.5%);
+@white: black;
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: @white;
+    p{
+        display: block;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
+
+.myBorder{
+    font-weight: 100;
+    padding: 1% 2%;
+    border: 2px solid @white;
+
+}
+
+
+div > .myBorder{
+    padding: 3px; 
+    border: 4px solid;
+}
+
+.white_backgraund{
+    text-align: center;
+    background-color: @white;
+    min-height: 375px; 
+    padding-top: 70px;
+    p{
+        font-size: 17px;
+    }
+}
+
+div .bigText{
+    text-transform: uppercase;
+    font-size: 34px;
+    margin-bottom: 60px;
+    span{
+        color: @yellow;
+    }
+}
+
+button{
+    background-color: @yellow;
+    border: none;
+    color:@white;
+    width: 307px;
+    height: 50px;
+    font-weight: 700;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: @yellow_dark;
+}
+
+.padding_bottom{
+    padding-bottom:110px;
+}
+
+.romb{
+    margin: 0 auto;
+    background-image: url(image/romb.png);
+    width: 136px;
+    height: 136px;
+    img{
+        margin-top: 45px;
+        margin-left: 45px;
+    }
+}
+
+.card{
+    border: 0;
+}
+
+.padding_top{
+    padding-top:100px;
+    padding-bottom: 110px;
+}
+
+.card-body{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.font_size_20{
+    font-size: 20px;
+    font-weight: 300;
+    color: @white;
+    .bigText{
+        font-weight: 600;
+    }
+}
+
+form button{
+    margin: 0;
+}
+
+.form-inline{
+    margin-top: 40px;
+}
+
+.form-inline .form-control{
+    width: 365px;
+    border: 2px solid @yellow;
+    border-radius: 0;
+    font-weight: 300;
+}
+
+.form-group{
+    margin-right: 5px;
+}
+
+.first_fon{
+    background-image: url(image/fon1.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.email{
+    min-height: 388px;
+    background-image: url(image/fon2.jpg);
+    background-size: cover;
+    top: 1286px;
+    background-attachment: fixed;
+}
+
+.line{
+    height: 486px;
+    padding-bottom: 110px;
+    .bigText{
+        margin-top: 80px;
+    }
+}
+
+.yellow_line{
+    background-color: @yellow;
+    position: relative;
+    height: 8px;
+    width: 95%;
+    margin: 0 10px;
+    margin-top: 60px;
+        border-radius: 50px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius:50px;
+    ul{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        position: absolute;
+        top: -7px;
+        padding: 0;
+        width: 100%;
+    }
+    li{
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        background-color: @yellow;
+        border-radius: 50px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius:50px;
+        width: 20px;
+        height: 20px;
+        p{
+            position: absolute;
+            top: 20px;
+            left: -80px;
+            display: block;
+            width: 180px;
+            text-align: center;
+            span{
+                font-size: 30px;
+                color: @yellow;
+            }
+        }
+    }
+    li:last-child{
+        margin-right: 0;
+    }
+}
+
+.haw_work{
+    margin-top: 110px;
+    margin-bottom: 230px;
+    .bigText{
+        margin-bottom: 5px;
+    }
+}
+
+.footer{
+    background-image: url(image/fon3.jpg);
+    height: 184px;
+}
+
+@media screen and (max-width: 848px){
+    .form-group{
+        width: 100%;
+        #inputEmail{
+            width: 100%;
+        }
+    }
+    form button{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 579px){
+    .form-group{
+        margin-right: 0;
+    }
+    .white_backgraund{
+        padding-bottom: 30px;
+    }
+    .yellow_line{
+            -moz-transform: rotate(90deg); /* Для Firefox */
+            -ms-transform: rotate(90deg); /* Для IE */
+            -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+            -o-transform: rotate(90deg); /* Для Opera */
+            transform: rotate(90deg);
+        ul{
+            top: -100px;
+        }
+        li{
+            -moz-transform: rotate(-90deg); /* Для Firefox */
+            -ms-transform: rotate(-90deg); /* Для IE */
+            -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+            -o-transform: rotate(-90deg); /* Для Opera */
+            transform: rotate(-90deg); 
+            
+        }
+    }
+}
